@@ -1,0 +1,5 @@
+DF <- read.csv("example_studentlist.csv", fileEncoding = "CP949")
+subset(DF, subset=(height>170))
+subset(DF, select=c(name,height),subset=(height>180))
+subset(DF, select=-height)
+subset(DF, select=c(-height,-weight))
